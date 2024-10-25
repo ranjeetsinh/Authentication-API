@@ -74,10 +74,6 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.AnonRateThrottle',
         'rest_framework.throttling.UserRateThrottle'
     ],
-    'DEFAULT_THROTTLE_RATES': {
-        'anon': '5/minute',  # 5 requests per minute for anonymous users
-        'user': '15/minute'  # 15 requests per minute for authenticated users
-    }
 }
 
 WSGI_APPLICATION = 'otp_auth.wsgi.application'
